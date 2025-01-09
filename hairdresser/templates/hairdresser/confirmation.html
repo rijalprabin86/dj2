@@ -1,0 +1,10 @@
+<h2>Appointment Confirmation</h2>
+<p>Thank you for booking an appointment with us!</p>
+<p>Your appointment details:</p>
+<ul>
+    <li>Service: {{ appointment.service }}</li>
+    <li>Date: {{ appointment.date }}</li>
+    <li>Time: {{ appointment.time }}</li>
+    <li>Name: {{ appointment.client_name }}</li>
+</ul>
+<a href="hairdresser/templates/hairdresser/book_appointment.html">Book Another Appointment</a>

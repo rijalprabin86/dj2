@@ -1,0 +1,15 @@
+<h2>Book an Appointment</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" id="submitButton">Book Appointment</button>
+</form>
+
+<script>
+document.getElementById("submitButton").addEventListener("click", function(event) {
+    event.preventDefault();
+    if (confirm('Are you sure you want to book this appointment?')) {
+        document.querySelector('form').submit();
+    }
+});
+</script>
